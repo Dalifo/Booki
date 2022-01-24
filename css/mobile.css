@@ -70,15 +70,9 @@ nav li:hover
     padding-right: 5%;
 }
 
-#search h3
-{
-    font-size: xx-large;
-    font-weight: bold;
-}
-
 #search p
 {
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 30px;
 }
 
@@ -106,15 +100,15 @@ nav li:hover
 
 #search i
 {
-    font-size: xx-large;
-    padding: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    font-size: x-large;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #search label i
 {
-    width: 25px;
+    width: 20px;
 }
 
 #search button
@@ -122,14 +116,13 @@ nav li:hover
     padding: 0;
     left: 75%;
     border-radius: 25px;
-    height: 60px;
     width: auto;
   
 }
 
 #search input
 {
-    font-size: 150%;
+    font-size: 100%;
     width: 60%;
 }
 
@@ -164,12 +157,12 @@ nav li:hover
 {
     height: 70px;
     width: 70px;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 #filter h2
 {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 #filter .row
@@ -179,7 +172,7 @@ nav li:hover
 
 .info
 {
-    font-size: x-large;
+    font-size: large;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -201,20 +194,9 @@ nav li:hover
     flex-direction: column-reverse;
 }
 
-
   /***********************/
  /* Les plus populaires */
 /***********************/
-
-#titlepop h3
-{
-    font-size: xx-large;
-}
-
-#titlepop .fas
-{
-    font-size: xx-large;
-}
 
 aside
 {
@@ -236,8 +218,13 @@ aside .card-image img
 
 aside .card-body
 {
-    font-size: x-large;
+    font-size: large;
     width: 65%;
+}
+
+aside .card-title
+{
+    width: 90%;
 }
 
 aside .card-note
@@ -258,7 +245,7 @@ aside .card-note
 #lodging article h2
 {
     padding-left: 4%;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 #lodging article #cards
@@ -271,9 +258,9 @@ aside .card-note
 {
     width: 95%;
     box-shadow: 5px 5px 5px #F2F2F2;
-    font-size: x-large;
+    font-size: large;
     border-radius: 30px;
-    height: 350px;
+    height: 330px;
 }
 
 article .card-note
@@ -291,20 +278,18 @@ article .card-note
 
 #lodging h3
 {
-    font-size: x-large;
+    font-size: 128%;
 }
 
 #lodging .fas
 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 p a
 {
-    font-size: x-large;
-    position: relative;
-    top: 80px;
-    left: 2%;
+    font-size: large;
+    padding-left: 3%;
 }
 
   /*************/
@@ -319,7 +304,7 @@ p a
 
 #activities h2
 {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 #list-activities
@@ -343,7 +328,7 @@ p a
 
 #activities .XL .card-image
 {
-    height: 75%;
+    height: 80%;
 }
 
 #activities .L, #activities .M, #activities .S, #activities .XS
@@ -355,7 +340,7 @@ p a
 
 #activities .L .card-image, #activities .M .card-image, #activities .S .card-image, #activities .XS .card-image
 {
-    height: 75%;
+    height: 80%;
 }
 
 #activities .double
@@ -368,7 +353,8 @@ p a
 
 #activities .card-title h3
 {
-    font-size: x-large;
+    font-size: 125%;
+    padding-left: 5%;
 }
 
   /**********/

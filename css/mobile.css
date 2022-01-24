@@ -382,12 +382,12 @@ footer
 
 footer h2
 {
-   font-size: xx-large;
+   font-size: x-large;
 }
 
 footer a
 {
-   font-size: x-large;
+   font-size: large;
    line-height: 200%;
 }
 

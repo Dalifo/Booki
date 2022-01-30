@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Booki</title>
+    <meta name="description" content="Le site de planification de vacances Booki vous permet de trouver des hébergements et des activités dans la ville de votre choix, en fonction de votre budget, et de plein d'autres thématiques !" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link
@@ -45,7 +46,7 @@
     </header>
 
     <main>
-      <section id="search">
+      <section class="search">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <form method="post" action="traitement.php">
@@ -59,10 +60,9 @@
           <button><span>Rechercher</span><i class="fas fa-search"></i></button>
         </form>
       </section>
-      <section id="filter">
+      <section class="filter">
         <h2>Filtres</h2>
 
-        <div class="row">
           <span class="filter-box">
             <i class="fas fa-money-bill-wave"></i>
             <span class="text"> Économique </span>
@@ -71,16 +71,16 @@
             <i class="fas fa-child"></i>
             <span class="text"> Familial </span>
           </span>
-        </div>
 
-        <span class="filter-box">
-          <i class="fas fa-heart"></i>
-          <span class="text"> Romantique </span>
-        </span>
-        <span class="filter-box">
-          <i class="fas fa-dog"></i>
+          <span class="filter-box">
+            <i class="fas fa-heart"></i>
+            <span class="text"> Romantique </span>
+          </span>
+          <span class="filter-box">
+            <i class="fas fa-dog"></i>
           <span class="text"> Animaux autorisés </span>
-        </span>
+          </span>
+        
       </section>
 
       <p class="info">
@@ -92,7 +92,7 @@
         <article>
           <h2>Hébergements à Marseille</h2>
 
-          <div id="cards">
+          <div class="cards">
             <div class="card">
               <a href="#">
                 <div class="card-image">
@@ -251,7 +251,7 @@
         </article>
 
         <aside>
-          <div id="titlepop">
+          <div class="aside-title">
             <h2>Les plus populaires</h2>
             <i class="fas fa-chart-line"></i>
           </div>
@@ -339,8 +339,8 @@
       <section id="activities">
         <h2>Activités à Marseille</h2>
 
-        <article id="list-activities">
-          <div class="XL">
+        <article class="list-activities">
+          <div class="card-extra-large">
             <a href="#">
               <div class="card-image">
                 <img src="images/activites/vieuxport.jpg" alt="Vieux Port" />
@@ -351,8 +351,8 @@
             </a>
           </div>
 
-          <div class="double">
-            <div class="L">
+          <div class="two-cards">
+            <div class="card-large">
               <a href="#">
                 <div class="card-image">
                   <img
@@ -366,7 +366,7 @@
               </a>
             </div>
 
-            <div class="XS">
+            <div class="card-extra-small">
               <a href="#">
                 <div class="card-image">
                   <img
@@ -381,8 +381,8 @@
             </div>
           </div>
 
-          <div id="activities2">
-            <div class="XL">
+          <div id="more-activities">
+            <div class="card-extra-large">
               <a href="#">
                 <div class="card-image">
                   <img
@@ -396,8 +396,8 @@
               </a>
             </div>
 
-            <div class="double">
-              <div class="S">
+            <div class="two-cards">
+              <div class="card-small">
                 <a href="#">
                   <div class="card-image">
                     <img
@@ -411,7 +411,7 @@
                 </a>
               </div>
 
-              <div class="M">
+              <div class="card-medium">
                 <a href="#">
                   <div class="card-image">
                     <img

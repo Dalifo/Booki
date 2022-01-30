@@ -70,27 +70,23 @@ nav ul
 nav li
 {
    display: flex;
-   padding-top: 30px;
-   padding-right: 50px;
-   padding-left: 50px;
-   border-top: solid transparent;
-   margin-top: -17px;
 }
 
 nav a
 {
+   padding-top: 30px;
+   padding-right: 50px;
+   padding-left: 50px;
+   border-top: solid transparent;
+   margin-top: -16px;
    text-decoration: none;
    color: #181818;
-}
-
-nav li:hover
-{
-   border-top: solid #0065FC;
 }
 
 nav a:hover
 {
    color: #0065FC;
+   border-top: solid #0065FC;
 }
 
 
@@ -98,14 +94,14 @@ nav a:hover
  /* Recherche */
 /*************/
 
-#search p
+.search p
 {
    position: relative;
    top: -10px;
    margin-bottom: 1px;
 }
 
-#search form
+.search form
 {
    box-sizing: border-box;
    border: #F2F2F2 solid 1px;
@@ -113,7 +109,7 @@ nav a:hover
    width: 380px;
 }
 
-#search i
+.search i
 {
    box-sizing: content-box;
    background-color: #F2F2F2;
@@ -122,7 +118,7 @@ nav a:hover
    border-bottom-left-radius: 10px;
 }
 
-#search input
+.search input
 {
    box-sizing: content-box;
    padding: 2%;
@@ -130,7 +126,7 @@ nav a:hover
    font-weight: bold;
 }
 
-#search button
+.search button
 {
    background-color: #0065FC;
    color: white;
@@ -142,7 +138,7 @@ nav a:hover
    font-weight: bold;
 }
 
-#search button .fa-search
+.search button .fa-search
 {
    display: none;
 }
@@ -151,20 +147,14 @@ nav a:hover
  /* Filtres */
 /***********/
 
-#filter 
+.filter 
 {
    display: flex;
    align-items: center;
    padding-top: 2%;
 }
 
-#filter .row
-{
-    display: flex;
-    flex-direction: row;
-}
-
-#filter .filter-box 
+.filter .filter-box 
 {
    margin: 0px 10px;
    border-radius: 30px;
@@ -175,7 +165,7 @@ nav a:hover
    cursor: pointer
 }
 
-#filter .filter-box i 
+.filter .filter-box i 
 {
    background-color: #DEEBFF;
    height: 50px;
@@ -189,12 +179,12 @@ nav a:hover
 }
 
 
-#filter .filter-box:hover 
+.filter .filter-box:hover 
 {
    background-color: #DEEBFF;
 }
 
-#filter .filter-box .text 
+.filter .filter-box .text 
 {
    padding: 0px 10px;
    width: fit-content;
@@ -262,7 +252,7 @@ p a
    font-weight: bold;
 }
 
-#lodging article #cards
+#lodging article .cards
 {
    display: flex;
    flex-wrap: wrap;
@@ -356,14 +346,14 @@ aside
    height: 700px;
 }
 
-#titlepop
+.aside-title
 {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
 }
 
-#titlepop i
+.aside-title i
 {
    font-size: x-large;
    align-self: center;
@@ -428,7 +418,7 @@ aside .card-note
    padding: 5% 0% 5% 0%;
 }
 
-#list-activities
+.list-activities  
 {
    display: flex;
    flex-direction: row;
@@ -446,7 +436,7 @@ aside .card-note
    border-top-right-radius: 20px;
 }
 
-#activities .XL
+#activities .card-extra-large
 {
    width: 23%;
    height: 100%;
@@ -456,13 +446,13 @@ aside .card-note
    box-shadow: 5px 5px 5px #F2F2F2;
 }
 
-#activities .XL .card-image
+#activities .card-extra-large .card-image
 {
    height: 89%;
    overflow: hidden;
 }
 
-#activities .double
+#activities .two-cards
 {
    width: 23%;
    height: 100%;
@@ -471,7 +461,7 @@ aside .card-note
    justify-content: space-between;
 }
 
-#activities .L
+#activities .card-large
 {
    width: 100%;
    height: 56%;
@@ -480,13 +470,13 @@ aside .card-note
    box-shadow: 5px 5px 5px #F2F2F2;
 }
 
-#activities .L .card-image
+#activities .card-large .card-image
 {
    height: 79%;
    overflow: hidden;
 }
 
-#activities .XS
+#activities .card-extra-small
 {
    width: 100%;
    height: 36%;
@@ -495,18 +485,18 @@ aside .card-note
    box-shadow: 5px 5px 5px #F2F2F2;
 }
 
-#activities .XS .card-image
+#activities .card-extra-small .card-image
 {
    height: 70%;
    overflow: hidden;
 }
 
-#activities2 .XL, #activities2 .double
+#more-activities .card-extra-large, #more-activities .two-cards
 {
    width: 48%;
 }
 
-#activities .M
+#activities .card-medium
 {
    width: 100%;
    height: 51%;
@@ -515,13 +505,13 @@ aside .card-note
    box-shadow: 5px 5px 5px #F2F2F2;
 }
 
-#activities .M .card-image
+#activities .card-medium .card-image
 {
    height: 79%;
    overflow: hidden;
 }
 
-#activities .S
+#activities .card-small
 {
    width: 100%;
    height: 41%;
@@ -531,7 +521,7 @@ aside .card-note
    box-shadow: 5px 5px 5px #F2F2F2;
 }
 
-#activities .S .card-image
+#activities .card-small .card-image
 {
    height: 75%;
    overflow: hidden;
@@ -553,7 +543,7 @@ aside .card-note
    text-decoration: none;
 }
 
-#activities2
+#more-activities
 {
    display: flex;
    flex-direction: row;

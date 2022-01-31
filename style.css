@@ -1,0 +1,588 @@
+  /*************************************/
+ /* CSS pour écrans de plus de 992 px */
+/*************************************/
+
+/* Appel de la règle box-sizing */
+
+.box
+{
+   box-sizing: border-box;
+   /* box-sizing est appliqué à tous les éléments */
+}
+
+  /******************/
+ /* Design général */
+/******************/
+
+body
+{
+   font-family: 'Raleway', serif;
+   margin: auto;
+   max-width: 1400px;
+}
+
+main
+{
+   margin-left: 30px;
+   margin-right: 30px;
+}
+
+h1, h2
+{
+   font-size: x-large;
+}
+
+h3
+{
+   font-size: large;
+}
+
+strong
+{
+   font-weight: bold;
+}
+
+  /**********/
+ /* Header */
+/**********/
+
+header
+{
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 20px 20px 20px;
+   flex-wrap: wrap;
+}
+
+header img
+{
+   width: 150px;
+   padding-top: 30px;
+   margin-left: 30px;
+}
+
+nav ul
+{
+   display: flex;
+   justify-content: space-between;
+}
+
+nav li
+{
+   display: flex;
+}
+
+nav a
+{
+   padding-top: 30px;
+   padding-right: 50px;
+   padding-left: 50px;
+   border-top: solid transparent;
+   margin-top: -16px;
+   text-decoration: none;
+   color: #181818;
+}
+
+nav a:hover
+{
+   color: #0065FC;
+   border-top: solid #0065FC;
+}
+
+
+  /*************/
+ /* Recherche */
+/*************/
+
+.search p
+{
+   position: relative;
+   top: -10px;
+   margin-bottom: 1px;
+}
+
+.search form
+{
+   box-sizing: border-box;
+   border: #F2F2F2 solid 1px;
+   border-radius: 13px;
+   width: 380px;
+}
+
+.search i
+{
+   box-sizing: content-box;
+   background-color: #F2F2F2;
+   padding: 18px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+
+.search input
+{
+   box-sizing: content-box;
+   padding: 2%;
+   border: none;
+   font-weight: bold;
+}
+
+.search button
+{
+   background-color: #0065FC;
+   color: white;
+   padding: 17px;
+   border: none;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   position: absolute;
+   font-weight: bold;
+}
+
+.search button .fa-search
+{
+   display: none;
+}
+
+  /***********/
+ /* Filtres */
+/***********/
+
+.filter 
+{
+   display: flex;
+   align-items: center;
+   padding-top: 2%;
+}
+
+.filter .filter-box 
+{
+   margin: 0px 10px;
+   border-radius: 30px;
+   border: 2px solid #F2F2F2;
+   display: flex;
+   align-items: center;
+   font-weight: bold;
+   cursor: pointer
+}
+
+.filter .filter-box i 
+{
+   background-color: #DEEBFF;
+   height: 50px;
+   width: 50px;
+   display: inline-block;
+   border-radius: 100%;
+   color: #0065FC;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.filter .filter-box:hover 
+{
+   background-color: #DEEBFF;
+}
+
+.filter .filter-box .text 
+{
+   padding: 0px 10px;
+   width: fit-content;
+}
+
+
+.info 
+{
+   display: flex;
+}
+
+.info .fas.fa-info 
+{
+   color: #0065FC;
+   border: 1px solid #F2F2F2;
+   border-radius: 100%;
+   width: 25px;
+   height: 25px;
+   font-size: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+}
+
+
+  /****************/
+ /* Hébergements */
+/****************/
+
+#lodging
+{
+   display: flex;
+   justify-content: space-between;
+}
+
+  /***********/
+ /* Article */
+/***********/
+
+#lodging article
+{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap ;
+   flex-grow: 2;
+   box-sizing: border-box;
+   background-color: #F2F2F2;
+   box-sizing: content-box;
+   width: 50%;
+   padding: 2%;
+   border-radius: 20px;
+   margin-right: 2%;
+}
+
+#lodging article h1, p a
+{
+   padding-left: 2%;
+}
+
+p a
+{
+   text-decoration: none;
+   color: #181818;
+   font-weight: bold;
+}
+
+#lodging article .cards
+{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#lodging article .card
+{
+   width: 30%;
+   height: 44%;
+   margin: 0px auto;
+   background-color: white;
+   margin-bottom: 5%;
+   border-radius: 20px;
+   line-height: 90%;
+   position: relative;
+}
+
+.card a
+{
+   color: #181818;
+   text-decoration: none;
+}
+
+#lodging article .card-image
+{
+   height: 120px;
+   position: relative;
+   overflow: hidden;
+}
+
+#lodging article .card-image img 
+{
+   width: 95%;
+   height: 93%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   object-fit: cover;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+#lodging article .card-body 
+{
+   flex-direction: column;
+   text-align: left;
+   padding: 0% 0% 0% 6%;
+   box-sizing: border-box;
+}
+
+article .card-note
+{
+   position: absolute;
+   top: 190px;
+}
+
+.blue
+{
+   font-size: 13px;
+   padding-top: 0;
+   color: #0065FC;
+}
+
+.grey
+{
+   font-size: 13px;
+   padding-top: 0;
+   color: #b3b3b3;
+}
+
+.card:hover
+{
+   box-shadow: 5px 5px 5px rgb(219, 217, 217);
+}
+
+  /***********************/
+ /* Les plus populaires */
+/***********************/
+
+aside
+{
+   display: flex;
+   flex-direction: column;
+   width: 33%;
+   box-sizing: border-box;
+   background-color: #F2F2F2;
+   border-radius: 20px;
+   padding: 2%;
+   margin: auto;
+   height: 700px;
+}
+
+.aside-title
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.aside-title i
+{
+   font-size: x-large;
+   align-self: center;
+}
+aside .card
+{
+   width: 100%;
+   height: 25%;
+   margin: 0% auto;
+   background-color: white;
+   margin-bottom: 5%;
+   border-radius: 20px;
+   position: relative;
+}
+
+aside .card i
+{
+   padding-top: 12%;
+}
+
+aside .card-image
+{
+   height: 100%;
+   position: relative;
+   overflow: hidden;
+}
+
+aside .card-image img 
+{
+   width: 35%;
+   height: 93%;
+   position: absolute;
+   top: 50%;
+   left: 19%;
+   transform: translate(-50%, -50%);
+   object-fit: cover;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+
+aside .card-body 
+{
+   text-align: left;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0%;
+   left: 40%;
+}
+
+aside .card-note
+{
+   position: absolute;
+   top: 120px;
+}
+
+  /*************/
+ /* Activités */
+/*************/
+
+#activities
+{
+   padding: 5% 0% 5% 0%;
+}
+
+.list-activities  
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   height: 450px;
+}
+
+#activities .card-image img
+{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+#activities .card-extra-large
+{
+   width: 23%;
+   height: 100%;
+   background-color: white;
+   margin-bottom: 5%;
+   border-radius: 20px;
+   box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+#activities .card-extra-large .card-image
+{
+   height: 89%;
+   overflow: hidden;
+}
+
+#activities .two-cards
+{
+   width: 23%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+#activities .card-large
+{
+   width: 100%;
+   height: 56%;
+   background-color: white;
+   border-radius: 20px;
+   box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+#activities .card-large .card-image
+{
+   height: 79%;
+   overflow: hidden;
+}
+
+#activities .card-extra-small
+{
+   width: 100%;
+   height: 36%;
+   background-color: white;
+   border-radius: 20px;
+   box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+#activities .card-extra-small .card-image
+{
+   height: 70%;
+   overflow: hidden;
+}
+
+#more-activities .card-extra-large, #more-activities .two-cards
+{
+   width: 48%;
+}
+
+#activities .card-medium
+{
+   width: 100%;
+   height: 51%;
+   background-color: white;
+   border-radius: 20px;
+   box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+#activities .card-medium .card-image
+{
+   height: 79%;
+   overflow: hidden;
+}
+
+#activities .card-small
+{
+   width: 100%;
+   height: 41%;
+   background-color: white;
+   border-radius: 20px;
+   position: relative;
+   box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+#activities .card-small .card-image
+{
+   height: 75%;
+   overflow: hidden;
+}
+
+#activities h3
+{
+   padding-left: 5%;
+}
+
+#activities h3
+{
+   padding-left: 2%;
+}
+
+#activities a
+{
+   color: #181818;
+   text-decoration: none;
+}
+
+#more-activities
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 48%;
+}
+
+  /**********/
+ /* Footer */
+/**********/
+
+footer
+{
+   background-color: #F2F2F2;
+   display: flex;
+   flex-direction: row;
+   padding: 40px 0px 40px 0px;
+}
+
+footer h2
+{
+   padding-left: 39px;
+   font-size: large;
+}
+
+footer a
+{
+   text-decoration: none;
+   color: black;
+}
+
+footer li
+{
+   display: flex;
+   align-items: flex-start;
+   line-height: 30px;
+}
+
+#about, #our_lodging, #help
+{
+   width: 35%;
+}

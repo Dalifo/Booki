@@ -1,0 +1,132 @@
+  /**************************************/
+ /* CSS pour écrans de moins de 992 px */
+/**************************************/
+
+  /**********/
+ /* Header */
+/**********/
+
+nav a:hover
+{
+    color: black;
+    border-top: solid transparent;
+}
+
+nav a:active
+{
+    color: #0065FC;
+    border-top: solid #0065FC;
+}
+
+
+  /***********/
+ /* Filtres */
+/***********/
+
+.filter 
+{
+    flex-wrap: wrap;
+}
+
+
+  /****************/
+ /* Hébergements */
+/****************/
+
+#lodging
+{
+    flex-direction: column;
+}
+
+#lodging article
+{
+    width: 96%;
+    margin-bottom: 5%;
+}
+
+#lodging article .card
+{
+    width: 45%;
+    line-height: 70%;
+    height: 300px;
+}
+
+article .card-note
+{
+    top: 270px;
+
+}
+
+#lodging article .card-image
+{
+    height: 200px;
+}
+
+#lodging .fas
+{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+p a
+{
+    font-size: x-large;
+}
+
+  /***********************/
+ /* Les plus populaires */
+/***********************/
+
+aside
+{
+    width: 100%;
+    margin-bottom: 5%;
+    height: 1000px;
+    padding: 2% 5% 0 5%;
+}
+
+.aside-title i
+{
+    font-size: xx-large;
+}
+
+aside .card-body h3
+{
+    font-size: x-large;
+}
+
+aside .card-body
+{
+    font-size: x-large;
+}
+
+aside .card-note
+{
+    top: 200px;
+}
+
+  /*************/
+ /* Activités */
+/*************/
+
+#activities
+{
+    height: 1300px;
+}
+.list-activities
+{
+    flex-wrap: wrap;
+}
+
+#activities .card-extra-large, #activities .two-cards
+{
+    width: 47%;
+    height: 600px;
+}
+
+#more-activities
+{
+    width: 100%;
+    height: 600px;
+    flex-direction: row-reverse;
+}

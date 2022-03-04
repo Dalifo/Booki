@@ -23,9 +23,14 @@ nav a:active
  /* Filtres */
 /***********/
 
-.filter 
+.filters
 {
     flex-wrap: wrap;
+}
+
+.filter-box
+{
+   margin-bottom: 15px;
 }
 
 
@@ -35,7 +40,7 @@ nav a:active
 
 #lodging
 {
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 #lodging article
@@ -54,7 +59,6 @@ nav a:active
 article .card-note
 {
     top: 270px;
-
 }
 
 #lodging article .card-image
@@ -87,7 +91,7 @@ aside
 
 .aside-title i
 {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 aside .card-body h3
@@ -103,6 +107,11 @@ aside .card-body
 aside .card-note
 {
     top: 200px;
+}
+
+#lodging article .card-body 
+{
+    height: 28%;
 }
 
   /*************/

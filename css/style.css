@@ -150,8 +150,13 @@ nav a:hover
 .filter 
 {
    display: flex;
-   align-items: center;
+   flex-direction: column;
    padding-top: 2%;
+}
+
+.filters
+{
+   display: flex;
 }
 
 .filter .filter-box 
@@ -178,10 +183,15 @@ nav a:hover
    justify-content: center;
 }
 
-
 .filter .filter-box:hover 
 {
    background-color: #DEEBFF;
+   border: solid 2px #0065FC;
+}
+
+.filter .filter-box:hover>i
+{
+   background-color: white;
 }
 
 .filter .filter-box .text 
@@ -189,7 +199,6 @@ nav a:hover
    padding: 0px 10px;
    width: fit-content;
 }
-
 
 .info 
 {
@@ -299,6 +308,7 @@ p a
 #lodging article .card-body 
 {
    flex-direction: column;
+   height: 35%;
    text-align: left;
    padding: 0% 0% 0% 6%;
    box-sizing: border-box;
